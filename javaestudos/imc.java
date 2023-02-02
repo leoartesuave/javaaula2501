@@ -3,9 +3,16 @@ import java.util.Scanner;
 public class imc {
 
     public static void main(String[] args) {
-
-        System.out.println("Entre com o peso: ");
         Scanner entrada = new Scanner(System.in);
+        int teste = 1;
+
+        while(teste == 1){
+            System.out.println("calcular o imc? 1 = sim ou 2 = nao!");
+            teste = entrada.nextInt();
+
+           if(teste == 1){
+        System.out.println("Entre com o peso: ");
+        
         Float peso = entrada.nextFloat();
 
         System.out.println("entre com altura: ");
@@ -13,6 +20,8 @@ public class imc {
 
         Float imc = peso / (altura * altura);
         System.out.println("seu imc e: " + imc);
+
+
 
         String classificacao = "";
 
@@ -23,7 +32,8 @@ public class imc {
         else  classificacao = "obesidade grave";
 
 System.out.println("sua classificacao e: " + classificacao);
-   
+        }
+    }
 }
 
 }
