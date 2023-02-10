@@ -41,3 +41,5 @@
 #### As classes abstratas podem fornecer implementacões  de código para comportamentos padrão que podem ser herdados e usados por classes filhas.
 
 #### As interfaces não fornecem implementações de código, apenas definem os COMPORTAMENTOS que devem ser implementados.
+
+### git config http.sslVerify false
